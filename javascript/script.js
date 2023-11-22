@@ -6,6 +6,7 @@ menu.onclick = () => {
   navbar.classList.toggle("active");
   menu.classList.toggle("move");
   cart.classList.remove("active");
+  login.classList.remove("active");
 };
 
 // Cart Toggle
@@ -13,6 +14,16 @@ let cart = document.querySelector(".cart");
 
 document.querySelector("#cart-icon").onclick = () => {
   cart.classList.toggle("active");
+  navbar.classList.remove("active");
+  menu.classList.remove("move");
+  login.classList.remove("active");
+};
+// Login Form Toggle
+let login = document.querySelector(".login-form");
+
+document.querySelector("#user-icon").onclick = () => {
+  login.classList.toggle("active");
+  cart.classList.remove("active");
   navbar.classList.remove("active");
   menu.classList.remove("move");
 };
