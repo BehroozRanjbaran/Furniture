@@ -330,7 +330,8 @@ header{
 }
 
 /* Popular */
-.popular-content {
+.popular-content,
+.products-content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, auto));
     gap: 2rem;
@@ -419,4 +420,19 @@ header{
     margin-left: 1rem;
     color: var(--text-color);
     font-size: 0.9rem;
+}
+.products-content .box-text {
+    background: var(--text-color);
+}
+.products-content .box-text h3 {
+    color: var(--bg-color);
+}
+.products-content .box-text span {
+    color: var(--bg-color);
+}
+.products-content .box-text .bx {
+    background: var(--main-color);
+}
+.products-content .box-text .bx:hover {
+    background: var(--hover-color);
 }
