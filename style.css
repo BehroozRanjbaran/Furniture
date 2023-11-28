@@ -21,6 +21,9 @@
 img{
    width: 100%; 
 }
+section {
+    padding: 4rem 0 3rem;
+}
 body{
     color: var(--text-color);
 }
@@ -305,4 +308,69 @@ header{
     right: 20px;
     border-radius: 50%;
     z-index: -1;
+}
+.heading{
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.heading h2{
+    font-size: 1.4rem;
+}
+.heading a {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--text-color);
+}
+.heading a:hover {
+    color: var(--main-color);
+    border-bottom: 2px solid var(--main-color);
+}
+
+/* Popular */
+.popular-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+    gap: 2rem;
+}
+.box {
+    padding: 10px;
+    background: #f1f1f1;
+    border-radius: 0.5rem;
+    display: grid;
+    row-gap: 0.5rem;
+}
+.box img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    object-position: center;
+}
+.box-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    background: var(--bg-color);
+    padding: 10px;
+    border-radius: 0.5rem;
+}
+.title-price h3{
+  font-size: 1rem;  
+  font-weight: 600;
+}
+.title-price span{
+   font-weight: 500; 
+}
+.box-text .bx {
+  padding: 10px;  
+  font-size: 20px;
+  background: var(--text-color);
+  color: var(--bg-color);
+  border-radius: 5rem;
+}
+.box-text .bx:hover {
+    background: var(--main-color);
 }
